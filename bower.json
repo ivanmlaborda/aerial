@@ -1,0 +1,17 @@
+{
+  "name": "aerial",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "Ivan Martinez Laborda (ivanmlaborda@gmail.com)"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
