@@ -25,10 +25,42 @@ html, body {
 
 /* --------------------- map-container --------------------------------*/
 .map-container {
+  position: relative;
   height: 90%;
   width: 90%;
   background-color: #B5D3D9; }
+  .map-container .carousel {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #C8CECE;
+    z-index: 401; }
+    .map-container .carousel .carousel-indicators {
+      bottom: 40px; }
+      .map-container .carousel .carousel-indicators li {
+        color: red; }
+      .map-container .carousel .carousel-indicators li:after {
+        color: red; }
+    .map-container .carousel .carousel-item .carousel-caption {
+      position: relative;
+      z-index: 40;
+      top: 0;
+      bottom: 0;
+      margin: 0 auto;
+      right: auto;
+      left: auto; }
+      .map-container .carousel .carousel-item .carousel-caption h3 {
+        color: white;
+        text-shadow: 0px 0px 4px black;
+        font-size: 17px;
+        font-weight: bold; }
+      .map-container .carousel .carousel-item .carousel-caption p {
+        color: white;
+        text-shadow: 0px 0px 4px black;
+        font-size: 14px;
+        font-weight: bold; }
   .map-container .map {
+    position: absolute;
     height: 100%;
     width: 100%;
     border: 1px solid #C8CECE; }

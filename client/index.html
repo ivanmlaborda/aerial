@@ -1,25 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="bower_components/leaflet/dist/leaflet.css">
   <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
   <title>Test Aerial</title>
 </head>
+
 <body>
   <div class="main-container">
+    <!-- <div class="slider-container">
+      <div class="carousel-slider"></div>
+    </div> -->
     <div class="map-container">
+      <div id="carouselTiles" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselTiles" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselTiles" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="carousel-caption">
+              <h3>google_tiles_01</h3>
+              <p>Showing google_tiles_01</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption">
+              <h3>googles_tiles_02</h3>
+              <p>Showing google_tiles_02</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselTiles" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselTiles" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
       <div id="map" class="map"></div>
     </div>
   </div>
 
+  <!-- jQuery -->
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <!-- Popper.js -->
+  <script src="bower_components/popper.js/dist/umd/popper.min.js"></script>
   <!-- Leaflet -->
   <script src="bower_components/leaflet/dist/leaflet.js"></script>
+  <!-- Bootstrap -->
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <!-- Custom Scripts -->
   <script src="js/main.js"></script>
   <script src="js/mapping-scripts.js"></script>
 </body>
+
 </html>
