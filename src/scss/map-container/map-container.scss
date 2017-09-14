@@ -23,7 +23,6 @@
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#F07818' viewBox='0 0 8 8'%3E%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E")
       }
     }
-
     .carousel-indicators {
       z-index: 402;
       li {
@@ -38,16 +37,9 @@
         height: 6px;
       }
     }
-
-
     a {
       z-index: 401;
     }
-    // a:hover {
-    //   background-color: #000;
-    //   opacity: 0.2;
-    // }
-
     .carousel-inner {
       height: 100%;
       display: flex;
