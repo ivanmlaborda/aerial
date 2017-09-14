@@ -10,9 +10,9 @@
     height: 100%;
     width: 100%;
     border: 1px solid $pr-pale-gray;
-    z-index: 401;
 
     .carousel-indicators {
+      z-index: 401;
       bottom: 40px;
       li {
         color: red;
@@ -22,10 +22,18 @@
       }
     }
 
+    a {
+      z-index: 401;
+    }
+    a:hover {
+      background-color: #000;
+      opacity: 0.2;
+    }
+
     .carousel-item {
+      z-index: 401;
       .carousel-caption {
         position: relative;
-        z-index: 40;
         top: 0;
         bottom: 0;
         margin: 0 auto;
