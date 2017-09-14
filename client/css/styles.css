@@ -34,37 +34,54 @@ html, body {
     height: 100%;
     width: 100%;
     border: 1px solid #C8CECE; }
+    .map-container .carousel .carousel-control-prev .carousel-control-prev-icon, .map-container .carousel .carousel-control-next .carousel-control-prev-icon {
+      width: 40px;
+      height: 40px;
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#F07818' viewBox='0 0 8 8'%3E%3Cpath d='M4 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E"); }
+    .map-container .carousel .carousel-control-prev .carousel-control-next-icon, .map-container .carousel .carousel-control-next .carousel-control-next-icon {
+      width: 40px;
+      height: 40px;
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#F07818' viewBox='0 0 8 8'%3E%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E"); }
     .map-container .carousel .carousel-indicators {
-      z-index: 401;
-      bottom: 40px; }
+      z-index: 402; }
       .map-container .carousel .carousel-indicators li {
-        color: red; }
-      .map-container .carousel .carousel-indicators li:after {
-        color: red; }
+        background-color: #F0A830;
+        opacity: 0.4;
+        height: 5px; }
+      .map-container .carousel .carousel-indicators .active {
+        z-index: 402;
+        background-color: #F07818;
+        opacity: 1;
+        height: 6px; }
     .map-container .carousel a {
       z-index: 401; }
-    .map-container .carousel a:hover {
-      background-color: #000;
-      opacity: 0.2; }
-    .map-container .carousel .carousel-item {
-      z-index: 401; }
-      .map-container .carousel .carousel-item .carousel-caption {
-        position: relative;
-        top: 0;
-        bottom: 0;
-        margin: 0 auto;
-        right: auto;
-        left: auto; }
-        .map-container .carousel .carousel-item .carousel-caption h3 {
-          color: white;
-          text-shadow: 0px 0px 4px black;
-          font-size: 17px;
-          font-weight: bold; }
-        .map-container .carousel .carousel-item .carousel-caption p {
-          color: white;
-          text-shadow: 0px 0px 4px black;
-          font-size: 14px;
-          font-weight: bold; }
+    .map-container .carousel .carousel-inner {
+      height: 100%;
+      display: flex; }
+      .map-container .carousel .carousel-inner .active {
+        z-index: 401;
+        align-self: flex-end;
+        height: 22%; }
+        .map-container .carousel .carousel-inner .active .carousel-caption {
+          height: 60%; }
+          .map-container .carousel .carousel-inner .active .carousel-caption h3 {
+            color: #F07818;
+            text-shadow: 0px 0px 4px white;
+            font-size: 15px;
+            font-weight: bold; }
+          .map-container .carousel .carousel-inner .active .carousel-caption p {
+            color: #F07818;
+            text-shadow: 0px 0px 4px white;
+            font-size: 12px;
+            font-weight: bold; }
+        .map-container .carousel .carousel-inner .active .carousel-caption:hover {
+          background-color: rgba(0, 0, 0, 0.4); }
+          .map-container .carousel .carousel-inner .active .carousel-caption:hover h3 {
+            color: white;
+            text-shadow: 0px 0px 4px black; }
+          .map-container .carousel .carousel-inner .active .carousel-caption:hover p {
+            color: white;
+            text-shadow: 0px 0px 4px black; }
   .map-container .map {
     position: absolute;
     height: 100%;

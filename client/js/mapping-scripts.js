@@ -8,7 +8,7 @@ const map = L.map('map', {
 
 const baseHydda = L.tileLayer('https://{s}.tile.openstreetmap.se/hydda/full/{z}/{x}/{y}.png', {
   maxZoom: 18,
-  attribution: 'Tiles courtesy of <a href="http://openstreetmap.se/" target="_blank">OpenStreetMap Sweden</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  attribution: ''
 })
 baseHydda.addTo(map)
 

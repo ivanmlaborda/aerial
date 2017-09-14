@@ -11,49 +11,79 @@
     width: 100%;
     border: 1px solid $pr-pale-gray;
 
-    .carousel-indicators {
-      z-index: 401;
-      bottom: 40px;
-      li {
-        color: red;
+    .carousel-control-prev, .carousel-control-next {
+      .carousel-control-prev-icon {
+        width: 40px;
+        height: 40px;
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#F07818' viewBox='0 0 8 8'%3E%3Cpath d='M4 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E")
       }
-      li:after {
-        color: red;
+      .carousel-control-next-icon {
+        width: 40px;
+        height: 40px;
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#F07818' viewBox='0 0 8 8'%3E%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E")
       }
     }
+
+    .carousel-indicators {
+      z-index: 402;
+      li {
+        background-color: $pr-light-orange;
+        opacity: 0.4;
+        height: 5px;
+      }
+      .active {
+        z-index: 402;
+        background-color: $pr-full-orange;
+        opacity: 1;
+        height: 6px;
+      }
+    }
+
 
     a {
       z-index: 401;
     }
-    a:hover {
-      background-color: #000;
-      opacity: 0.2;
-    }
+    // a:hover {
+    //   background-color: #000;
+    //   opacity: 0.2;
+    // }
 
-    .carousel-item {
-      z-index: 401;
-      .carousel-caption {
-        position: relative;
-        top: 0;
-        bottom: 0;
-        margin: 0 auto;
-        right: auto;
-        left:auto;
-        h3 {
-          color: white;
-          text-shadow: 0px 0px 4px rgba(0, 0, 0, 1);
-          font-size: 17px;
-          font-weight: bold;
+    .carousel-inner {
+      height: 100%;
+      display: flex;
+      .active {
+        z-index: 401;
+        align-self: flex-end;
+        height: 22%;
+        .carousel-caption {
+          height: 60%;
+
+          h3 {
+            color: $pr-full-orange;
+            text-shadow: 0px 0px 4px rgba(255, 255, 255, 1);
+            font-size: 15px;
+            font-weight: bold;
+          }
+          p {
+            color: $pr-full-orange;
+            text-shadow: 0px 0px 4px rgba(255, 255, 255, 1);
+            font-size: 12px;
+            font-weight: bold;
+          }
         }
-        p {
-          color: white;
-          text-shadow: 0px 0px 4px rgba(0, 0, 0, 1);
-          font-size: 14px;
-          font-weight: bold;
+        .carousel-caption:hover {
+          background-color: rgba(0,0,0,0.4);
+          h3 {
+            color: white;
+            text-shadow: 0px 0px 4px rgba(0, 0, 0, 1);
+          }
+          p {
+            color: white;
+            text-shadow: 0px 0px 4px rgba(0, 0, 0, 1);
+          }
         }
       }
     }
-
   }
   .map {
     position: absolute;
