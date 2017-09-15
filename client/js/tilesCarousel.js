@@ -11,6 +11,10 @@ const tilesCarousel = (...lyrs) => {
     layers[layerId] = lyr
   })
 
+  $('.carousel').carousel({
+    interval: false
+  })
+
   $(document).ready(() => {
     $('#carouselTiles').on('slide.bs.carousel', (e) => {
       let tileId = e.relatedTarget.id

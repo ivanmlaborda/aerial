@@ -18,6 +18,7 @@
     "leaflet": "^1.2.0",
     "bootstrap": "v4.0.0-beta",
     "jquery": "^3.2.1",
-    "popper.js": "^1.12.5"
+    "popper.js": "^1.12.5",
+    "font-awesome": "^4.7.0"
   }
 }
