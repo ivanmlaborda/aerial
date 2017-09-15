@@ -55,10 +55,12 @@ $('#animate-button').on('click', (e) => {
     animStatus = true
     console.log('Initiating animation')
     $('.carousel').carousel('cycle')
+    $('#animate-button').find('i').toggleClass('fa-play fa-pause')
   } else {
     animStatus = false
     console.log('Pausing animation')
     $('.carousel').carousel('pause')
+    $('#animate-button').find('i').toggleClass('fa-pause fa-play')
   }
   console.log('animate clic')
 })
@@ -67,5 +69,3 @@ $('#info-button').on('click', (e) => {
   console.log('info clic')
   $('#infoModal').modal()
 })
-
-setTimeout(() => $('.carousel').carousel('pause'), 3000)
