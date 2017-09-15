@@ -74,4 +74,9 @@
     width: 100%;
     border: 1px solid $pr-pale-gray;
   }
+  .leaflet-bar a, .leaflet-bar a:hover {
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    cursor: pointer;
+  }
 }

@@ -83,6 +83,10 @@ html, body {
     height: 100%;
     width: 100%;
     border: 1px solid #C8CECE; }
+  .map-container .leaflet-bar a, .map-container .leaflet-bar a:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    cursor: pointer; }
 
 /* --------------------- modal --------------------------------*/
 .modal .modal-dialog .modal-content {
