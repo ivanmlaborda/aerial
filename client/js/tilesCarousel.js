@@ -10,11 +10,7 @@ const tilesCarousel = (...lyrs) => {
     iCount++
     layers[layerId] = lyr
   })
-
-  $('.carousel').carousel({
-    interval: false
-  })
-
+  setTimeout(() => $('.carousel').carousel('pause'), 1000)
   $(document).ready(() => {
     $('#carouselTiles').on('slide.bs.carousel', (e) => {
       let tileId = e.relatedTarget.id
