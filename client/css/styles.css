@@ -57,9 +57,29 @@ html, body {
       z-index: 401; }
     .map-container .carousel .carousel-inner {
       height: 100%;
-      display: flex; }
+      display: flex;
+      flex-direction: column-reverse; }
+      .map-container .carousel .carousel-inner .carousel-item-next, .map-container .carousel .carousel-inner .carousel-item-prev {
+        z-index: 401;
+        position: absolute;
+        height: 22%;
+        align-self: flex-end;
+        top: inherit; }
+        .map-container .carousel .carousel-inner .carousel-item-next .carousel-caption, .map-container .carousel .carousel-inner .carousel-item-prev .carousel-caption {
+          height: 60%; }
+          .map-container .carousel .carousel-inner .carousel-item-next .carousel-caption h3, .map-container .carousel .carousel-inner .carousel-item-prev .carousel-caption h3 {
+            color: #F07818;
+            text-shadow: 0px 0px 4px white;
+            font-size: 15px;
+            font-weight: bold; }
+          .map-container .carousel .carousel-inner .carousel-item-next .carousel-caption p, .map-container .carousel .carousel-inner .carousel-item-prev .carousel-caption p {
+            color: #F07818;
+            text-shadow: 0px 0px 4px white;
+            font-size: 12px;
+            font-weight: bold; }
       .map-container .carousel .carousel-inner .active {
         z-index: 401;
+        position: absolute;
         align-self: flex-end;
         height: 22%; }
         .map-container .carousel .carousel-inner .active .carousel-caption {
