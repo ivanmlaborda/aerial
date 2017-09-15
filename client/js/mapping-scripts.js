@@ -25,4 +25,4 @@ const layer02 = L.tileLayer('data/google_tiles_02/{z}/{x}/{y}.png', {
 })
 
 // Calling the plugin
-tilesCarousel()
+tilesCarousel(layer01, layer02)
