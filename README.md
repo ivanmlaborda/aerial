@@ -1,4 +1,4 @@
-# LEAFLET + BOOTSTRAP CAROUSEL
+# LEAFLET + GOOGLE TILES + BOOTSTRAP CAROUSEL + CUSTOM LEAFLET BUTTONS
 [![NodeJS](https://github.com/MarioTerron/logo-images/blob/master/logos/nodejs.png)](https://nodejs.org/)
 [![ExpressJS](https://github.com/MarioTerron/logo-images/blob/master/logos/expressjs.png)](http://expressjs.com///)
 [![npm](https://github.com/MarioTerron/logo-images/blob/master/logos/npm.png)](https://www.npmjs.com/)
@@ -10,4 +10,4 @@
 [![Standard - JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 [![LeafletJS](http://ivansanchez.github.io/leaflet-vs-openlayers-slides/img/leaflet.svg)](http://leafletjs.com)
 
-[![DEMO](http://ivanmlaborda.github.io/aerial/demos/demo_05.gif)]
+[![DEMO](http://github.com/ivanmlaborda/aerial/demos/demo_05.gif)]
