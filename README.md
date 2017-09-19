@@ -10,4 +10,4 @@
 [![Standard - JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 [![LeafletJS](http://ivansanchez.github.io/leaflet-vs-openlayers-slides/img/leaflet.svg)](http://leafletjs.com)
 
-[![DEMO](http://ivansanchez.github.io/aerial/demos/demo_05.gif)]
+[![DEMO](http://ivanmlaborda.github.io/aerial/demos/demo_05.gif)]
